@@ -1,0 +1,22 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transform-style: preserve-3d;
+    perspective: 40vh;
+    background-image:linear-gradient(45deg,#0099cc,#66ffcc)
+}
+#box{
+    width:200px;
+    height:200px;
+    background-image:linear-gradient(90deg,#006666,#666699);
+    text-align: center;
+    font-size: 100px;
+    position: absolute;
+    box-shadow: 10px 10px 10px black;
+    rotate:1 1 0 0deg;
+    transform: rotateX(0deg) rotateY(0deg);
+}
