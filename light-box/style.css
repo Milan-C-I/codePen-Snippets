@@ -1,0 +1,25 @@
+*{
+    overflow-x:hidden;
+}
+body{
+background:black;
+margin:0;
+}
+.container{
+margin:0px;
+display:grid;
+grid-template-columns: repeat(18,1fr);
+gap:0px;
+}
+.box{
+margin:0px;
+width:120px;
+height:120px;
+background:none;
+border:1px solid black;
+transition:3s;
+}
+/* .box:hover{
+transition:none;
+background:#66ffff;
+} */
