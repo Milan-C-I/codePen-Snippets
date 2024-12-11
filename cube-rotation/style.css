@@ -1,0 +1,133 @@
+body{
+
+    margin:0;
+  
+    width:100vw;
+  
+    height:100vh;
+  
+    display:grid;
+  
+    place-items:center;
+  
+    background-image:linear-gradient(90deg,black,gray,black);
+  
+  }
+  
+  .container{
+  
+    position:absolute;
+  
+    width:100px;
+  
+    height:100px;
+    transform-style:preserve-3d;
+  
+    transform:rotateX(0deg);
+  
+    transform-origin:50% 50%;
+  
+    animation:5s linear 0s infinite forwards rot;
+  
+  }
+  
+  .s1,.s2,.s3,.s4,.s5,.s6{
+  
+    position:absolute;
+  
+    width:100px;
+  
+    height:100px;
+    border:2px solid white;
+  
+    background:none;
+  
+    transform-origin:50% 50%;
+    
+  /*   animation:8s linear 0s infinite forwards radi; */
+  
+  }
+  
+  .s1{
+  
+    background-image:linear-gradient(90deg,red,blue);
+  
+    transform:translateX(0px) translateY(0px)
+  
+      translateZ(50px) rotateX(0deg) rotateY(0deg);
+  
+  }
+  
+  .s2{
+  
+    background-image:linear-gradient(90deg,#00fffc,blue);
+  
+    transform:translateX(0px) translateY(-50px)
+  
+      translateZ(0px) rotateX(90deg) rotateY(0deg);
+  
+  }
+  
+  .s3{
+  
+     background-image:linear-gradient(90deg,#00ff40,blue);
+  
+    transform:translateX(0px) translateY(50px) translateZ(0px) rotateX(270deg) rotateY(0deg);
+  
+  }
+  
+  .s4{
+  
+    background-image:linear-gradient(90deg,#fffb00,blue);
+  
+    transform:translateX(0px) translateY(0%) translateZ(-50px) rotateX(180deg) rotateY(0deg);
+  
+  }
+  
+  .s5{
+  
+    background-image:linear-gradient(90deg,#ea00ff,blue);
+  
+    transform:translateX(50px) translateY(0%) translateZ(0px) rotateX(0deg) rotateY(90deg);
+  
+  }
+  
+  .s6{
+  
+    background-image:linear-gradient(90deg,#fffb00,#00ff73);
+  
+    transform:translateX(-50px) translateY(0%) translateZ(0px) rotateX(0deg) rotateY(90deg);
+  
+  }
+  @keyframes radi{
+    0%{
+      border-radius:0px 0p;
+      }25%{
+        border-radius:0px 50px;
+        }
+    50%{
+      border-radius:50px 50px;
+      }75%{
+        border-radius:0px 50px;
+        }
+    100%{
+      border-radius:0px 0px;
+      }
+    }
+  
+  @keyframes rot{
+  
+    0%{
+      scale:1;
+      transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    
+    }50%{
+      scale:2.5;
+    }
+      100%{
+      scale:1;
+      transform:rotateX(360deg) rotateY(360deg) rotateZ(0deg);
+  
+    }
+  
+  }
